@@ -2,14 +2,20 @@ package com.company.todoapp.models;
 
 import org.springframework.hateoas.RepresentationModel;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.Objects;
 
-
+@Entity
 public class Todo extends RepresentationModel<Todo> {
 
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
   // spring validation framework
   @NotBlank(message = "Title is required.")
