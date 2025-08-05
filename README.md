@@ -16,7 +16,8 @@ docker ps
     <artifactId>postgresql</artifactId>
     <scope>runtime</scope>
     <version>42.5.0</version>
-</
+</dependency>
+```
 
 ## Add Configuration ##
 
