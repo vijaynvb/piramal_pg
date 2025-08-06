@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-//@Service
+@Service
 public class TodoStaticService implements ITodoService {
 
   // static data data store

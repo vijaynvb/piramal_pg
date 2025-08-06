@@ -9,8 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Qualifier
-@Service
+
 public class TodoPGDbService implements ITodoService {
 
     @Autowired
